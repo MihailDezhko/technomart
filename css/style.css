@@ -471,28 +471,31 @@ textarea {
 
 /* cuprum-regular - cyrillic */
 @font-face {
-  font-family: "Cuprum";
+  font-family: 'Cuprum';
   font-style: normal;
   font-weight: 400;
-  src: local("Cuprum Regular"), local("Cuprum-Regular"),
-    url("../fonts/cuprum-v11-cyrillic-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/cuprum-v11-cyrillic-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+       url('../fonts/cuprum-v11-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cuprum-v11-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 /* cuprum-700 - cyrillic */
 @font-face {
-  font-family: "Cuprum";
+  font-family: 'Cuprum';
   font-style: normal;
   font-weight: 700;
-  src: local("Cuprum Bold"), local("Cuprum-Bold"),
-    url("fonts/cuprum-v11-cyrillic-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("fonts/cuprum-v11-cyrillic-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+       url('../fonts/cuprum-v11-cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cuprum-v11-cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* cuprum-italic - cyrillic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+       url('../fonts/cuprum-v11-cyrillic-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cuprum-v11-cyrillic-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html {
   box-sizing: border-box;
 }
@@ -500,8 +503,8 @@ html {
 body {
   font-family: "Cuprum";
   font-style: normal;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -513,19 +516,31 @@ body {
 
 .header {
   position: relative;
-  background: #888888;
+  background: #f1f5f7;
+  height: 320px;
+  width: 100%;
+}
+.header__content {
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .header__menu {
   height: 47px;
   background: #293449;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #f1f5f7;
+}
+.head_info {
+  display: flex;
 }
 
-.header__content {
-  max-width: 940px;
-  margin: 0 auto;
-  display: flex;
+input.value {
+  color: #ffffff;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 a {
@@ -542,7 +557,7 @@ a {
 
 .input_searsh_header {
   width: 100%;
-  height: 42px;
+  height: 41px;
   padding-left: 42px;
   background: #293449;
   outline: none;
@@ -569,7 +584,7 @@ a {
   display: flex;
 }
 
-.head_menu_list>li {
+.head_menu_list > li {
   width: 150px;
   height: 42px;
   display: flex;
@@ -582,15 +597,15 @@ a {
   padding: 13px;
 }
 
-.head_menu_list>li>a {
+.head_menu_list > li > a {
   display: flex;
-  color: white;
+
   font-family: "Cuprum";
   font-style: normal;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 24px;
-
+  color: white;
 }
 
 .lays,
@@ -602,34 +617,121 @@ a {
 .icon_lays,
 .icon_basket {
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 10px;
+  opacity: 0.3;
 }
 
 .submenu {
+  width: 940px;
   height: 60px;
   box-shadow: inset 0px -5px 0px #293449;
   background: #293449;
-  margin-top: 200px;
 }
 
 .submenu_list {
   display: flex;
+  
 }
 
-.submenu_list>li {
+.submenu_list > li {
   display: flex;
-  align-items: center;
   width: 134px;
+  height: 60px;
+  
+  align-items: center;
   justify-content: center;
 }
 
-.submenu_list>li>a {
+.submenu_list > li > a {
   color: white;
-  text-decoration: none;
   font-family: "Cuprum";
   font-style: normal;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  
+}
+
+.header_info {
+  display: flex;
+  width: 940px;
+  height: 153px;
+}
+.heading_info {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  padding: 37px 30px 44px 30px;
+}
+
+.phone {
+  position: relative;
+  width: 270px;
+  height: 45px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  color: #ee3643;
+  padding: 5px 15px 8px 70px;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+.icon-phone {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+.adress {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
 }
+.header_adress {
+  padding: 41px 30px 30px 55px;
+}
+.header_enter {
+  width: 121px;
+  height: 45px;
+  border: none;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  position: relative;
+  background: #ffffff;
+  padding: 12px 27px 12px 45px;
+  margin-right: 10px;
+}
+.icon_enter {
+  position: absolute;
+  top: 10px;
+  left: 19px;
+}
+.header_registration {
+  display: ;
+  width: 150px;
+  height: 45px;
+  border: none;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  position: relative;
+  background: #ffffff;
+  padding: 12px 24px;
+}
+.header_buttons {
+  display: flex;
+  padding: 41px 0 67px 25px;
+}
+.
