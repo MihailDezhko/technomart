@@ -499,6 +499,26 @@ textarea {
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/cuprum-v11-cyrillic-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+    url("../fonts/pt-sans-v11-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pt-sans-v11-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 html {
   box-sizing: border-box;
 }
@@ -896,6 +916,7 @@ a {
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 89px 318px;
   margin-top: 69px;
+  gap: 20px;
 }
 .header_box2 {
   grid-column: 1/5;
@@ -903,6 +924,7 @@ a {
   background: #f9f5f0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .most_popular {
   font-family: "Cuprum";
@@ -912,6 +934,168 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+  margin-left: 28px;
+}
+.all_popular {
+  width: 192px;
+  height: 38px;
+  background: #ee3643;
+  border: none;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-right: 14px;
 }
 .card1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card2 {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card4 {
+  position: relative;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.old_price {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  margin-bottom: 10px;
+}
+.redbutton {
+  border: none;
+  background: transparent;
+}
+.redback {
+  position: relative;
+  margin-bottom: 20px;
+}
+.new_price {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.card4 .old_price {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: transparent;
+  margin-bottom: 10px;
+}
+.img_card {
+  margin: auto;
+}
+.box3 {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 89px 145px 145px;
+  margin-top: 60px;
+  gap: 20px;
+}
+.header_box3 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  background: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.bosch {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: auto;
+}
+.makita {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: auto;
+}
+.dewalt {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  margin: auto;
+}
+.interscol {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  margin: auto;
+}
+.hitachi {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin: auto;
+}
+.lg {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  margin: auto;
+}
+.aeg {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  margin: auto;
+}
+.metabo {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  margin: auto;
 }
