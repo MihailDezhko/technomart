@@ -559,7 +559,7 @@ body {
 
 input.value {
   color: #ffffff;
-
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1221,16 +1221,14 @@ a {
   line-height: 24px;
   color: #000000;
 }
-.del_linii,
-.avtotreding,
-.zeldor {
+.perevozchik {
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  margin-bottom: 12px;
+  padding-left: 10px;
 }
 .button_about,
 .button_write {
@@ -1264,4 +1262,96 @@ a {
 }
 .button_write {
   width: 300px;
+}
+.perevozka {
+  padding-bottom: 15px;
+}
+.footer {
+  position: relative;
+  background: #32425c;
+  height: 300px;
+}
+
+.first_line_footer,
+.second_line_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_list {
+  height: 68px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.menu_list > li > a {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+.footer_menu_1 {
+  width: 550px;
+}
+.footer_menu_2 {
+  width: 520px;
+}
+.adress_footer {
+  height: 68px;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  margin-top: 22px;
+}
+.menu_list2 {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_list2 > li > a {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffda96;
+}
+.down_footer {
+  width: 100%;
+  position: absolute;
+  top: 193px;
+  left: 0;
+  height: 107px;
+  background: #293449;
+}
+.third_line_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_info {
+  width: 290px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pravoobladanie,
+.footer_info {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.mail,
+.develop {
+  color: #ffd180;
 }
