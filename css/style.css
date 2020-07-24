@@ -1099,3 +1099,169 @@ a {
   grid-column: 4/5;
   margin: auto;
 }
+/* box4 */
+.box4 {
+  width: 100%;
+
+  background: #f1f5f7;
+  margin-top: 66px;
+}
+
+.serv_name {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 64px;
+  padding-bottom: 25px;
+}
+.serv_content {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+.serv {
+  padding-bottom: 70px;
+}
+.box4_cont {
+  height: 522px;
+}
+.service {
+  display: flex;
+  position: relative;
+}
+.service_menu > ul > li {
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+  width: 240px;
+  height: 61px;
+  background: #32425c;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+.service_menu > ul > li > a {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.service_menu > ul > li:first-child {
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #ffffff;
+}
+.service_menu > ul > li:first-child > a {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425c;
+}
+.shadow {
+  position: absolute;
+  top: -49px;
+  left: 230px;
+}
+.service_text {
+  margin-left: 80px;
+}
+.service_text_head {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.service_text_main {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 30px;
+}
+.service_img {
+  position: absolute;
+  top: 19px;
+  right: 0;
+}
+.box5_content {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.left_content_header,
+.right_content_header {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.left_content_1,
+.left_content_2,
+.right_content {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+.del_linii,
+.avtotreding,
+.zeldor {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.button_about,
+.button_write {
+  width: 220px;
+  height: 38px;
+  border: none;
+  background: #ee3643;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.left_content,
+.right_content {
+  padding-top: 74px;
+}
+.left_content_1,
+.right_content_1 {
+  padding-top: 24px;
+}
+.left_content_2 {
+  padding-top: 24px;
+}
+.map {
+  padding-top: 32px;
+  padding-bottom: 25px;
+}
+.button_write {
+  width: 300px;
+}
