@@ -617,12 +617,11 @@ a {
 
 .zakaz {
   background: #5fbb2d;
-  padding: 13px;
+  padding-left: 19px;
 }
 
 .head_menu_list > li > a {
   display: flex;
-
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
@@ -630,7 +629,10 @@ a {
   line-height: 24px;
   color: white;
 }
-
+.bookmark__counter,
+.basket__counter {
+  padding-left: 5px;
+}
 .lays,
 .basket {
   padding-left: 32px;
@@ -678,6 +680,8 @@ a {
   display: flex;
   width: 940px;
   height: 153px;
+  justify-content: space-between;
+  align-items: center;
 }
 .heading_info {
   font-family: "Cuprum";
@@ -686,17 +690,17 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  padding: 37px 30px 44px 30px;
+  padding-left: 30px;
 }
 
 .phone {
   position: relative;
   width: 270px;
   height: 45px;
-  text-align: center;
+  padding-left: 74px;
+  padding-top: 7px;
   border: 3px solid #ffffff;
   color: #ee3643;
-  padding: 5px 15px 8px 70px;
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
@@ -716,8 +720,8 @@ a {
   line-height: 24px;
   text-align: center;
 }
-.header_adress {
-  padding: 41px 30px 30px 55px;
+.header_buttons {
+  height: 70px;
 }
 .header_enter {
   width: 121px;
@@ -730,7 +734,7 @@ a {
   line-height: 21px;
   position: relative;
   background: #ffffff;
-  padding: 12px 27px 12px 45px;
+  padding-left: 30px;
   margin-right: 10px;
 }
 .icon_enter {
@@ -749,11 +753,6 @@ a {
   line-height: 21px;
   position: relative;
   background: #ffffff;
-  padding: 12px 24px;
-}
-.header_buttons {
-  display: flex;
-  padding: 41px 0 67px 25px;
 }
 
 .box1 {
